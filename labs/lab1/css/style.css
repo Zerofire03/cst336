@@ -21,6 +21,8 @@ nav a:hover{ /*pseudo class*/
     transition:.9s; /*transition effect*/
 }
 
+
+
 figure, div{
     float:left;
 }
@@ -29,6 +31,62 @@ figure, div{
     float:left;
 }
 
+#welcomeText{
+    text-align:left;
+}
+
 footer{
     clear:left;
 }
+
+#footerText{
+    font-size: smaller;
+    color:blue;
+}
+
+#csumbLogo{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table{
+    margin: 0px auto;
+}
+
+td{
+    padding-right: 10px;
+    font-size:1.3em;
+}
+
+td strong{
+    color:orange;
+}
+
+#table-header{
+    background-color: #351a00;
+}
+
+.table-row{
+    background-color: #753900;
+}
+
+ul{
+    text-align: left;
+    padding-left: 200px;
+}
+
+.hobby{
+    color: yellow;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    margin-bottom: 0px;
+}
+
+#googleForm{
+    clear:left;
+    text-align: center;
+}
+
