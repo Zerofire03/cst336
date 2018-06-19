@@ -85,8 +85,9 @@ h1{
     margin-bottom: 0px;
 }
 
-#googleForm{
-    clear:left;
-    text-align: center;
+#googleForm, #csumbLogo{
+    display: flex;
+    justify-content: center;
+    width:100%;
 }
 
