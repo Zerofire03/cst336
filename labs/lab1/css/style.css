@@ -21,6 +21,10 @@ nav a:hover{ /*pseudo class*/
     transition:.9s; /*transition effect*/
 }
 
+hr{
+    width:50%;
+}
+
 
 
 figure, div{
