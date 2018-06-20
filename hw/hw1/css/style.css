@@ -1,0 +1,87 @@
+body{
+    background-color:black;
+    color:gray;
+}
+
+header, main, nav, footer{
+    text-align: center;
+}
+
+nav a{ /*links within a "nav" container*/
+    padding:15px;
+    padding-bottom:4px;
+    font-size:1.8em;
+    text-decoration:none; /*removes underline*/
+    color:green; /*by default, links are blue*/
+}
+
+nav a:hover{ /*pseudo class*/
+    border-bottom:2px orange solid;
+    font-size:2em;
+    transition:.9s; /*transition effect*/
+}
+
+nav a:active{/*active link within the nav container*/
+    background-color:yellow;
+}
+
+figure, div{
+    float:left;
+}
+
+h1{
+    font-size: 4em;
+    margin-bottom: 0px;
+    color:blue;
+}
+
+h3{
+    color:#017FFE;
+    text-decoration: underline;
+}
+
+#sccmLogo, #csumbLogo, #osdPicture, #osupdatePicture, #osdPicture{
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+
+footer{
+    clear:left;
+}
+
+#footerText{
+    font-size: smaller;
+    color:blue;
+}
+
+nav{
+    border-style: double;
+    border-color: rgb(0, 153, 51);
+}
+
+div{
+    border-style: dotted;
+    border-color: rgb(153, 0, 0);
+    margin: 0;
+}
+
+ul{
+    text-align: left;
+}
+
+#currentPage{
+    color: blue;
+}
+
+span{
+    color:red;
+}
+
+li{
+    color:blue;
+}
+
+header{
+    text-shadow: 2px 2px 8px white;
+}

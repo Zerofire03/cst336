@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This is the head -->
+<!-- All styles and javascript go inside the head -->
+    <head>
+        
+        <meta charset="utf-8" />
+        <title>Application Deployment</title>
+        
+        <style>
+            @import url("css/style.css");
+        </style>
+        
+    </head>
+<!-- closing head -->
+
+    <!-- This is the body -->
+    <!-- This is where we place the content of our website -->
+    <body>
+        <header>
+            <h1>Application Deployment</h1>
+        </header>
+        
+        <nav>
+            <a href="index.html">Main Page</a>
+            <a href="osd.html">Operating System Deployment</a>
+            <a href="osUpdate.html">Operating System Updates</a>
+            <a id="currentPage" href="applicationDeployment.html">Application Deployment</a>
+        </nav>
+        
+        <br/><br/>
+        
+        <main>
+            <figure id="osdPicture">
+                <img src="img/progressbar.jpg" alt="Picture of an application installing progress bar."/>
+            </figure>
+            <div id="appdeploy">
+                <p>In an enterprise enviornment, users are not generally allowed to be able to install software 
+                on their machine. This is for many reasons. A few of these reasons are listed below:</p>
+                <ul>
+                    <li><span>Security</span>: Users are not given administrative rights</li>
+                    <li><span>Licenses</span>: IT department needs to make sure software is licensed</li>
+                    <li><span>Auditing</span>: The IT department needs to know what is installed where</li>
+                </ul>
+                <p><abbr title="System Center Configuration Manager">SCCM</abbr> allows for users to be able to install 
+                preapproved applications on their machines themselves. The IT department is able to control which 
+                applications are availible to users, make sure a valid license is purchased for the software,
+                and are able to monitor and track where the software itself is installed. </p>
+            </div>
+        </main>
+        <footer>
+            <hr>
+             <span id="footerText">Course Name. 2018&copy; Holmes<br/>
+             <strong>Disclaimer:</strong> The information in this webpage is fictitious.<br/>
+             It isused for academic purposes only.<br/></span>
+             <figure id="csumbLogo">
+                 <img src="img/csumb_logo.jpg" alt="CSUMB Logo"/>
+             </figure>
+            
+        </footer>
+        
+    </body>
+    <!-- closing body -->
+
+</html>
