@@ -13,6 +13,7 @@ echo "Christopher Holmes's CST336 Internet Programming";
 <h1>Labs</h1>
 
 <a href="labs/lab1/">Lab 1</a>
+<a href="labs/lab2/">Lab 2</a>
 
 <br /> <br />
 
