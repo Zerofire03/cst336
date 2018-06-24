@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Rancho');
+
+body{
+    background-color: rgb(7,99,36);
+}
+
+img{
+    border: 5px solid black;
+}
+
+input{
+    top: 500px;
+    left: 210px;
+    position: absolute;
+    font-family: 'Rancho', cursive;
+    font-size: 2em;
+    background-color: transparent;
+    border: solid;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#player1, #player2{
+    font-family: 'Rancho', cursive;
+    font-size: larger;
+}
+
+#main{
+    width: 600px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#imgplayer1, #imgplayer2, #player1, #player2{
+    top: 248px;
+    position: absolute;
+}
+
+#player1{
+    left: 70px;
+}
+
+#player2{
+    left: 275px;
+}
+
+#imgplayer1{
+    left: 145px;
+    
+}
+
+#imgplayer2{
+    left: 357px;
+}
+
+#winner{
+    top: 170px;
+    left: 180px;
+    position: absolute;
+}
+
+.winner {
+      
+    font-family: 'Rancho', cursive;
+    font-style: italic; 
+    margin: 0 auto;
+    color:#313131;
+    font-size:45px;
+    font-weight: bold;
+    position: absolute;
+    -webkit-animation:colorchange 20s infinite alternate;
+      
+      
+}
+
+@-webkit-keyframes colorchange {
+    0% {
+        
+        color: blue;
+    }
+      
+    10% {
+        
+        color: #8e44ad;
+    }
+      
+    20% {
+        
+        color: #1abc9c;
+    }
+      
+    30% {
+        
+        color: #d35400;
+    }
+      
+    40% {
+        
+        color: blue;
+    }
+      
+    50% {
+        
+        color: #34495e;
+    }
+      
+    60% {
+        
+        color: blue;
+    }
+      
+    70% {
+        
+        color: #2980b9;
+    }
+    80% {
+     
+        color: #f1c40f;
+    }
+      
+    90% {
+     
+        color: #2980b9;
+    }
+      
+    100% {
+        
+        color: pink;
+     }
+}
