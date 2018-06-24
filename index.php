@@ -20,6 +20,7 @@ echo "Christopher Holmes's CST336 Internet Programming";
 <h1>Homework</h1>
 
 <a href="hw/hw1/">HW 1</a>
+<a href="hw/hw2/">HW 2</a>
 
 </body>
 </html>
