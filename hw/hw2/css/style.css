@@ -2,6 +2,8 @@
 
 body{
     background-color: rgb(7,99,36);
+    border: 10px solid transparent;
+    border-image: url(../img/chip.png) 30 round;
 }
 
 img{
@@ -9,7 +11,7 @@ img{
 }
 
 input{
-    top: 500px;
+    top: 400px;
     left: 210px;
     position: absolute;
     font-family: 'Rancho', cursive;
@@ -19,6 +21,11 @@ input{
     outline: none;
     font-weight: bold;
     cursor: pointer;
+}
+
+header{
+    text-align: center;
+    font-size: 2em;
 }
 
 #player1, #player2{

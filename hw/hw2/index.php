@@ -7,6 +7,9 @@
         </style>
     </head>
     <body>
+        <header>
+            <h1>High Low Card Game</h1>
+        </header>
         <div id="main">
             <?php
                 $score = $_POST['score'];
