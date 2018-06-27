@@ -6,18 +6,18 @@
     {
         echo "Please enter a keyword or select a category";
     }
-    elseif(isset($_GET['keyword']))
+    elseif(empty($_GET['category']))
     {
         include 'api/pixabayAPI.php';
         $keyword = $_GET['keyword'];
-        $imageURLs = getImageURLs($_GET['keyword'], $_GET['layout']);
+        $imageURLs = getImageURLs($keyword, $_GET['layout']);
         $backgroundImage = $imageURLs[array_rand($imageURLs)];
     }
-    elseif(isset($_GET['category']))
+    elseif(empty($_GET['keyword']))
     {
         include 'api/pixabayAPI.php';
-        $keyword = $_GET['keyword'];
-        $imageURLs = getImageURLs($_GET['category'], $_GET['layout']);
+        $category = $_GET['category'];
+        $imageURLs = getImageURLs($category, $_GET['layout']);
         $backgroundImage = $imageURLs[array_rand($imageURLs)];
     }
 ?>
@@ -107,11 +107,11 @@
             
             <select name="category">
                 <option value="">Select One</option>
-                <option value="ocean">Sea</option>
-                <option>Forest</option>
-                <option>Mountain</option>
-                <option>Snow</option>
-                <option>River</option>
+                <option value="sea">Sea</option>
+                <option value="forest">Forest</option>
+                <option value="mountain">Mountain</option>
+                <option value="snow">Snow</option>
+                <option value="river">River</option>
             </select>
             <input type="submit" value="Submit"/>
         </form>
