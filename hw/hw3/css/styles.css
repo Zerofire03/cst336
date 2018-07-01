@@ -1,0 +1,50 @@
+#playerCardMain
+{
+    width:200px;
+    margin: auto;
+    border: 3px solid black;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+#bio
+{
+    font-size: 11px;
+}
+
+#bioHeader
+{
+    font-size: 20px;
+    color: #ff5050;
+}
+
+#bioMiddle
+{
+    color: #0000cc;
+}
+
+form
+{
+    width: 45%;
+    text-align: center;
+    margin: auto;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+header
+{
+    height: 102px;
+    text-align:center;
+    background-image: url("../img/sportsHeader.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid black;
+    width: 491px;
+    margin: auto;
+    
+}
+
+body
+{
+    background-color: #00ccff;
+}
