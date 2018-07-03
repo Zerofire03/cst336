@@ -4,6 +4,16 @@ include 'dbConnection.php';
 
 $conn = getDatabaseConnection();
 
+if($conn->query('select database()')->fetchColumn() == 'ottermart')
+{
+    $dbname = 'ottermart';
+}
+
+else
+{
+    $dbname = 'heroku_53322df5e83175d';
+}
+
 function displayCategories()
 {
     global $conn;
