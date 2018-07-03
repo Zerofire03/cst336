@@ -17,7 +17,8 @@ function getDatabaseConnection($dbname = 'ottermart')
         print($dbName . " ");
         $username = $url["user"];
         print($username . " ");
-        $password = $url["pass"];
+        //$password = $url["pass"];
+        $password = "fbe93cf6";
         print($password);
     } 
 
