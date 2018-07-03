@@ -2,7 +2,7 @@
 
 include 'dbConnection.php';
 
-$conn = getDatabaseConnection("ottermart");
+$conn = getDatabaseConnection();
 
 function displayCategories()
 {
