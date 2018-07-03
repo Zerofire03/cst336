@@ -13,6 +13,7 @@ function getDatabaseConnection($dbname = 'ottermart')
         $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
         $host = $url["host"];
         $dbName = substr($url["path"], 1);
+        print($dbName);
         $username = $url["user"];
         $password = $url["pass"];
     } 
