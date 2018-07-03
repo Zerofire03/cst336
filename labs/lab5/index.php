@@ -4,14 +4,15 @@ include 'dbConnection.php';
 
 $conn = getDatabaseConnection();
 
-if($conn->query('select database()')->fetchColumn() == 'ottermart')
+if  (strpos($_SERVER['HTTP_HOST'], 'herokuapp') !== false)
 {
-    $dbname = 'ottermart';
+    $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+    $dbName = substr($url["path"], 1);
+    //$dbname = 'heroku_53322df5e83175d';
 }
-
 else
 {
-    $dbname = 'heroku_53322df5e83175d';
+    $dbname = 'ottermart';
 }
 
 function displayCategories()
@@ -36,6 +37,7 @@ function displayCategories()
 function displaySearchResults()
 {
     global $conn;
+    global $dbname;
     
     if(isset($_GET['searchForm']))
     {
@@ -46,7 +48,7 @@ function displaySearchResults()
         //Query bellow prevents SQL Injection
         $namedParameters = array();
         
-        $sql = "SELECT * FROM om_product WHERE 1";
+        $sql = "SELECT * FROM " . $dbname . ".om_product WHERE 1";
         
         if(!empty($_GET['product']))
         {
