@@ -11,6 +11,7 @@ function displayCategories()
     $dbname = $conn->query('select database()')->fetchColumn();
     
     $sql = "SELECT catId, catName from " . $dbname . ".om_category ORDER BY catName";
+    print $sql;
     
     $stmt = $conn->prepare($sql);
     $stmt->execute();
