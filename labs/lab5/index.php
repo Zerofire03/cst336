@@ -17,6 +17,7 @@ else
 function displayCategories()
 {
     global $conn;
+    global $dbname;
     
     $sql = "SELECT catId, catName from " . $dbname . ".om_category ORDER BY catName";
     print $sql;
