@@ -7,7 +7,7 @@ $conn = getDatabaseConnection();
 if  (strpos($_SERVER['HTTP_HOST'], 'herokuapp') !== false)
 {
     $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-    $dbName = substr($url["path"], 1);
+    $dbname = substr($url["path"], 1);
     //$dbname = 'heroku_53322df5e83175d';
 }
 else
