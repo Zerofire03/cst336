@@ -8,7 +8,7 @@ function displayCategories()
 {
     global $conn;
     
-    $sql = "SELECT catId, catName from om_category ORDER BY catName";
+    $sql = "SELECT catId, catName from heroku_53322df5e83175d.om_category ORDER BY catName";
     
     $stmt = $conn->prepare($sql);
     $stmt->execute();
