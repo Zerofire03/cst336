@@ -8,12 +8,9 @@ function displayCategories()
 {
     global $conn;
     
-    
-    
     $sql = "SELECT catId, catName from om_category ORDER BY catName";
     
     $stmt = $conn->prepare($sql);
-    print $stmt;
     $stmt->execute();
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
     //print_r($records);
