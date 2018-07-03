@@ -4,6 +4,7 @@ include 'dbConnection.php';
 
 $conn = getDatabaseConnection();
 
+/*
 if  (strpos($_SERVER['HTTP_HOST'], 'herokuapp') !== false)
 {
     $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
@@ -14,14 +15,14 @@ else
 {
     $dbname = 'ottermart';
 }
-
+*/
 function displayCategories()
 {
     global $conn;
-    global $dbname;
+    //global $dbname;
     
-    $sql = "SELECT catId, catName from " . $dbname . ".om_category ORDER BY catName";
-    print $sql;
+    //$sql = "SELECT catId, catName from " . $dbname . ".om_category ORDER BY catName";
+    $sql = "SELECT catId, catName from om_category ORDER BY catName";
     
     $stmt = $conn->prepare($sql);
     $stmt->execute();
@@ -48,7 +49,8 @@ function displaySearchResults()
         //Query bellow prevents SQL Injection
         $namedParameters = array();
         
-        $sql = "SELECT * FROM " . $dbname . ".om_product WHERE 1";
+        //$sql = "SELECT * FROM " . $dbname . ".om_product WHERE 1";
+        $sql = "SELECT * FROM om_product WHERE 1";
         
         if(!empty($_GET['product']))
         {
