@@ -8,6 +8,8 @@ function displayCategories()
 {
     global $conn;
     
+    print $conn;
+    
     $sql = "SELECT catId, catName from om_category ORDER BY catName";
     
     $stmt = $conn->prepare($sql);
