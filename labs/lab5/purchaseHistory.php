@@ -18,7 +18,6 @@
     $productId = $_GET['productId'];
     
     $sql = "SELECT * FROM " . $dbname . ".om_product NATURAL JOIN " . $dbname . ".om_purchase WHERE productId = :pId";
-    print $sql;
             
     $np = array();
     $np[":pId"] = $productId;
