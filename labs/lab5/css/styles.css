@@ -1,0 +1,51 @@
+body
+{
+    text-align: center;
+    background-color: #009900;
+}
+
+#form
+{
+    margin: auto;
+    width: 400px;
+    text-align: center;
+    border: 3px solid #004d00;
+    background-color: #00e600;
+}
+
+h1
+{
+    text-shadow: 2px 2px #009900;
+    font-family: 'Galada', cursive;
+    font-weight: bold;
+}
+
+h3
+{
+    font-family: 'Galada', cursive;
+    text-shadow: 2px 2px #00e600;
+}
+
+#results
+{
+    font-family: 'Galada', cursive;
+    text-align: left;
+    border: 3px solid #004d00;
+    background-color: #00e600;
+}
+
+a
+{
+    text-decoration: none;
+    color:#009999;
+}
+
+a:hover
+{
+    color:blue;
+}
+
+a:visited
+{
+    color:green;
+}
