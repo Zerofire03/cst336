@@ -1,7 +1,11 @@
 <?php
 
-function getDatabaseConnection()
+function getDatabaseConnection($dbname = 'ottermart')
 {
+    $host = 'localhost'; //cloud9
+    $username = 'root';
+    $password = '';
+    
     //Heroku
     if  (strpos($_SERVER['HTTP_HOST'], 'herokuapp') !== false)
     {
@@ -11,16 +15,6 @@ function getDatabaseConnection()
         $username = $url["user"];
         $password = $url["pass"];
     } 
-    
-    //Cloud9 db info
-    else
-    {
-        $host = 'localhost'; //cloud9
-        //$dbname = 'tcp';
-        $username = 'root';
-        $password = '';
-        $dbname = 'ottermart';
-    }
 
     
     //creates db connection

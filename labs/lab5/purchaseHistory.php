@@ -2,7 +2,7 @@
 
     include 'dbConnection.php';
     
-    $conn = getDatabaseConnection();
+    $conn = getDatabaseConnection("ottermart");
 
     /*
     if  (strpos($_SERVER['HTTP_HOST'], 'herokuapp') !== false)
@@ -16,13 +16,15 @@
         $dbname = 'ottermart';
     }
     */
+    
     $productId = $_GET['productId'];
     
-    ///$sql = "SELECT * FROM " . $dbname . ".om_product NATURAL JOIN " . $dbname . ".om_purchase WHERE productId = :pId";
+    //$sql = "SELECT * FROM " . $dbname . ".om_product NATURAL JOIN " . $dbname . ".om_purchase WHERE productId = :pId";
     $sql = "SELECT *
             FROM om_product
             NATURAL JOIN om_purchase
             WHERE productId = :pId";
+            
             
     $np = array();
     $np[":pId"] = $productId;
