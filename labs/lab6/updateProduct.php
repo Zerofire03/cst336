@@ -85,7 +85,7 @@
         <form>
             <input type="hidden" name="productId" value="<?=$product['productId']?>"/>
             <strong>Product Name</strong><input type="text" class="form-control" name="productName" value="<?=$product['productName']?>"><br>
-            <strong>Description</strong><textarea name="description" class="form-control" cols=50 rows=4><?=$product['productDescription']?>"></textarea><br>
+            <strong>Description</strong><textarea name="description" class="form-control" cols=50 rows=4><?=$product['productDescription']?></textarea><br>
             <strong>Price</strong><input type="text" class="form-control" name="price" value="<?=$product['price']?>"><br>
             <strong>Category</strong><select name="catId" class="form-control">
                 <option value="">Select One</option>
