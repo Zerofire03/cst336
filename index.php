@@ -19,6 +19,7 @@ echo "Christopher Holmes's CST336 Internet Programming";
 <a href="labs/lab5/">Lab 5</a>
 <a href="labs/lab6/">Lab 6</a>
 <a href="labs/lab7/">Lab 7</a>
+<a href="labs/lab8/">Lab 8</a>
 
 <br /> <br />
 
