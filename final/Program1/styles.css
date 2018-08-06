@@ -1,0 +1,13 @@
+#feedback {
+    display: none;  /*Hides feedback when accessing quiz */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.correct { /* For Correct Answers */
+    color: green;
+}
+ 
+.incorrect { /* For Incorrect Answers */
+    color: red;
+}
