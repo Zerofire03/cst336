@@ -30,5 +30,17 @@ echo "Christopher Holmes's CST336 Internet Programming";
 <a href="hw/hw3/">HW 3</a>
 <a href="hw/hw4/">HW 4</a>
 
+<br /> <br />
+
+<h1>Final Project</h1>
+
+<a href="final_project/">Catalan To Go Orders</a>
+
+<br /> <br />
+
+<h1>Final Exam</h1>
+<a href="final/Program1/">Program 1</a>
+<a href="final/Program2/">Program 2</a>
+
 </body>
 </html>
