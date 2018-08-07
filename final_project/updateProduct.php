@@ -51,7 +51,7 @@
         }
     }
     
-    if(isset($_GET['updateProduct']))
+    if(isset($_GET['updateItem']))
     {
         $sql = "UPDATE cat_menuItems
                 SET itemName = :itemName,
